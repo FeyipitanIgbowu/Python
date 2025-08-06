@@ -1,0 +1,25 @@
+HEAT ADVISORY
+If the measurement is equals to Celsius or if the user doesn't input any measurement(Which by default makes it Celsius), create a variable called output and assign (temperature * 9/5) + 32 to it.
+If the measurement is equals to Fahrenheit, output = (temperature - 32) * 5/9.
+If the above conditions are not met, it should raise a ValueError stating invalid input.
+If the output is less than the threshold, it should return Cold Advisory
+If the output is greater than or equal to the threshold, it should return Heat Alert.
+
+
+DISCOUNT CODE
+If the data type of item name is not string and the data type of price is not int and the data type of promotional discount is not string, return Valueerror stating invalid type.
+If the promotional discount is SAVE10, create a variable called discount and assign price - (price * 10 / 100) to it.
+If the promotional discount is HALFOFF, discount = price - (price * 50 / 100).
+If condition 2 and 3 are not met, return ValueError stating Invalid Discount Code
+
+PALINDROME AND PRIME NUMBER
+If the number is less than 2, return false.
+Create a variable called original and assign number into it.
+Create a variable called reversed assign 0 to it.
+While the number is greater than 0, Get the last digit of the number using number % 10 and save it in num.
+Multiply reversed by 10 and add num to it.
+Divide the number by 10 using floor division and update the number.
+If reversed is not equal original, return False.
+Loop from 2 to one less than the original number:
+If original is divisible by any of the numbers in the loop, return False.
+If none of the above conditions fail, return True.
